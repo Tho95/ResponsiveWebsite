@@ -1,4 +1,6 @@
-*{
+/* This file contains comments for learning purposes, which will be removed in a finale version */
+
+*{  /*default for all objects*/
     margin:0px;
     padding:0px;
     box-sizing:border-box;
@@ -6,4 +8,81 @@
 }
 body {
 	font-family: 'Poppins' , sans-serif;
+}
+
+header {
+    display: flex; /*flexible distribution of space for the childs*/
+    height: 15vh;  /* means 10% of the viewport height*/
+    width: 80%;
+    margin: auto;          /* makes the header use x% of width and centralizes it*/
+    align-items: center /* centers box around items + items in the center*/
+}
+
+.logo-container,.nav-links, .cart{
+    display: flex; /*put objects next to each other (horizontal)*/
+
+}
+
+.logo-container{
+    /*background: lightblue;*/   /*backgound can be helpfull to see wahts going on*/
+    flex: 1;
+}
+.logo-container img{
+    height: 6vh;
+}
+.logo{
+    font-weight: 400;
+    margin 5px;
+}
+nav{
+    flex:2;
+   /* background: rgb(100,100,20);*/
+}
+.nav-links{
+    justify-content: space-around; /*distribute content of box*/
+    list-style: none; /*remove dots before elements*/
+}
+.nav-link{
+    color: green;
+    text-decoration: none;
+}
+.cart{
+    flex: 1;
+    /*background: rgb(110,30,10);*/
+    justify-content: flex-end;
+
+}
+.cart img{
+    height: 6vh;
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction{
+    flex: 1;
+}
+.intro-text{
+    font-size: 40px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494969, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* background collor fills the text now (with gradient colot)*/
+}
+.intro-text p{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #585772;
+}
+.cta{
+    padding:50px,0px,0px,0px; /*top,right,bottom,left*/
+}
+.cover{
+    flex: 1;
+}
+.cover img {
+    height: 60vh;
 }
