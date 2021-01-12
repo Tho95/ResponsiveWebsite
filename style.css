@@ -9,7 +9,9 @@
 body {
 	font-family: 'Poppins' , sans-serif;
 }
-
+button{
+    font-family: 'Poppins' , sans-serif;
+}
 header {
     display: flex; /*flexible distribution of space for the childs*/
     height: 15vh;  /* means 10% of the viewport height*/
@@ -78,11 +80,91 @@ nav{
     color: #585772;
 }
 .cta{
-    padding:50px,0px,0px,0px; /*top,right,bottom,left*/
+    padding:50px 0px 0px 0px; /*top,right,bottom,left*/
+}
+.cta-select{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-add{
+    background: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border: none;
+    /*padding: 20px 0px 0px 20px;*/
 }
 .cover{
     flex: 1;
 }
+/*
 .cover img {
     height: 60vh;
+    filter: drop-shadow(0px 5px 3px black);
+}*/
+.bigPic{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: -1;
+    opacity: 0.3;
+    height: 25%;
+}
+/*
+.mediumPic{
+    position: absolute;
+    top: 15%;
+    right: 85%;
+    z-index: -1;
+    opacity: 0.20;
+    height: 20%;
+}*/
+.smallPic{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: -1;
+    opacity: 0.12;
+    height: 110%;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px ;
+  font-size: 100%;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  position: absolute;
+  bottom: 3%;
+  right: 8%;
+  background: #55ACEE;
+  color: white;
 }
